@@ -1,0 +1,59 @@
+{
+  "name": "curso-avanzado-graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vercel-build": "npm run build",
+    "build": "webpack",
+    "lint": "standard",
+    "dev": "webpack serve --open",
+    "deploy": "now -t <tu-token>",
+    "start:api": "NODE_ENV=production node index.js",
+    "dev:api": "nodemon index.js --ignore db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.25.3",
+    "bcrypt": "^5.0.1",
+    "cors": "2.8.5",
+    "express": "4.17.0",
+    "express-jwt": "^6.1.1",
+    "graphql": "14.3.0",
+    "jsonwebtoken": "8.5.1",
+    "lowdb": "1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3",
+    "uuid": "3.3.2"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "standard": "^16.0.4",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "wepack-cli": "^0.0.1-security"
+  }
+}

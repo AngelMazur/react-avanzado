@@ -1,7 +1,7 @@
 ## curso-platzi-react-avanzado ⚛️
 
-**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev
+Para arrancar la maquina tiene que ser desde la terminal de Powershell
 
-**¡Sígueme en Twitch para streams sobre desarrollo web!** 👉 https://www.twitch.tv/midudev
+comando `npm run dev`
 
-Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
+para pasar corrector lint `npm run lint`
